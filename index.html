@@ -1,0 +1,176 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	  <title>hickies Originals</title>
+	  <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+	 
+	  <link rel="stylesheet" href = "zaio.css">
+	  
+	  <script src="zaio.js"></script>
+</head>
+
+<body>  
+	    <div class="jummbotron jumbotron-fluid bg-info text-white text-center">   <!--used to make heading look more atrractive-->
+	    	<div class = "container">
+				<h1 class="display-1">HICKIES Originals</h1>
+			
+			</div>
+		</div>
+		<div class = "container">           <!--for stars and reviews-->
+			<div class ="row">
+					<div class = "col-sm-2" id = "stars">
+						<img src = "starstruck.png">
+					</div>
+					<div class = "col-sm-2">
+						<p class="text-muted">1,293 reviews</p>
+					</div>
+				</div>
+
+				<div class ="row">
+					<div class = "col-sm-2" id = "amount">
+						<p class = "text-danger lead">$14.99</p>
+					</div>
+					<div class = "col-sm-2">
+						<p class="text-muted">$17.99</p>
+					</div>
+
+					<div class = "col-sm-2" id="percent">
+						<p class="text-muted">25% OFF</p>
+					</div>
+			
+				</div>
+				<p>ONLINE EXCLUSIVE</p>
+		</div>
+		
+
+	    <p id="colorChosen"><strong>COLOR:</strong></p>
+
+
+		<button type = "button" id="buttonRed" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Red"' aria-pressed="true"></button>  <!-- changes to the colour clicked-->
+
+		<button type = "button" id="buttonGreen" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Green"'></button>
+
+		<button type = "button" id="buttonBlue" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Blue"'></button>
+
+		<button type = "button" id="buttonYellow" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Yellow"'></button>
+
+		<button type = "button" id="buttonOrange"onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Orange"'></button>
+        <br>
+        <br>
+		
+
+		<p><strong>Size guide</strong></p>
+
+		<p><strong>Your Custom fit</strong></p>
+
+		<button type = "button" id = "count">0</button>
+
+		<button type = "button" id = "cart" data-toggle="modal" data-target="#myModal">Add to cart</button>
+		<br>
+		<br>
+		<br>
+		<p>
+			<hr> </hr>
+		</p>
+		<br>
+		<br>
+		<strong> DETAILS</strong>
+		<br>
+		<br>
+		<br>
+		<p>
+			<hr> </hr>
+		</p>
+		<a data-toggle="modal" data-target="#needHelp"><strong>Need help?</strong></p>  <!--opens help modal-->
+		<p><strong>Shipping & Returns</strong></p>
+
+		
+
+       <div class ="modal" id="myModal">
+	        <!--Modal content-->
+			<div class="modal-content modal-md"  >
+				<span class="close">&times;</span>
+
+				<p> &nbsp &nbsp &nbsp &nbsp &nbsp  Please add the quantity of the item you have selected</p>
+
+				<div class="container">
+					<div class ="row" >
+						<div class="col-sm-2">
+							<p id ="chosenC">Electric red</p>
+						</div>
+						<div class="col-sm-4">
+							<img src = "sminus.png" onclick=subtract()>
+						</div>
+						<div class="col-sm-2">
+							<h1 id = "color" value="0">0</h1>
+						</div>
+						<div class="col-sm-4" id="plus">
+							<img src = "splus.png" onclick=add()>
+						</div>
+					</div>
+				</div>
+
+
+			    <ul id="buttons">
+			    	<li>
+			    		<button type="button" id="Agree">Agree</button>
+			    	</li>
+			    	<li>
+			    		<button type="button" id="Cancel">Cancel</button>
+			    	</li>
+
+
+			    </ul>
+
+
+			</div>
+
+		</div>
+
+		<div class ="modal" id="needHelp">     <!--help modal-->
+	   			<div class="modal-content modal-md"  >
+				<span class="close">&times;</span>
+				<div class="modal-header">
+					<h3 class="modal-title">Help</h3>
+				</div>
+				<div class="modal-body">
+
+					<p> please email <a href="https:www.uct.ac.za">hickies@myuct.ac.za</a> for more help</p>
+
+				</div>
+
+
+			</div>
+
+		</div>
+	
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+<!--
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+-->
+
+</body>

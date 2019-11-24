@@ -1,0 +1,109 @@
+#buttonRed{
+	background-color: red;           /* colours the different buttons*/
+	border-radius:100%;
+	padding: 12px 28px;
+}
+
+#buttonGreen{
+	background-color: green;
+	border-radius:100%;
+	padding: 12px 28px;
+	
+}
+
+#buttonOrange{
+	background-color: orange;
+	border-radius:100%;
+	padding: 12px 28px;
+	
+}
+
+#buttonBlue{
+	background-color: blue;
+	border-radius:100%;
+	padding: 12px 28px;
+	
+}
+
+#buttonYellow{
+	background-color: yellow;
+	border-radius:100%;
+	padding: 12px 28px;
+	
+}
+
+#count{                                    
+	border-radius:30%;
+	padding: 12px 28px;
+	font-color:black;
+	background-color: white;
+}
+
+#cart{
+	border-radius:30%;
+	padding: 12px 90px;
+	color:white;
+	background-color: black;
+}
+ #color{
+    text-align:left;
+ 	margin-right:70px;
+ 	padding:100px;
+ }
+
+#color{
+	margin-right:6200px;
+}
+
+
+
+.container .row #plus img{     /*changes size of img too large*/
+	width:67%;
+
+}
+
+
+.modal .modal-content #buttons li{                           /*displays buttons on same line*/
+	display: inline-block;
+	
+	
+	
+}
+
+
+#buttons #Agree{
+	background-color: lightgreen;
+	margin-left: 580px;
+
+	padding: 10px;
+	border-radius: 20%;
+	
+}
+
+#buttons #Cancel{
+	background-color: red;
+	padding: 10px;
+	border-radius: 20%;
+}
+#stars img{
+	width:100%;
+	align-content:left:;
+}
+.modal-content{
+	border: dashed;
+
+}
+
+#amount p{
+
+	font-weight: bold;
+	font-size: x-large;
+}
+
+#percent p{
+	font-weight: bold;
+}
+
+#chosenC{
+	padding-right: 30px;
+}
