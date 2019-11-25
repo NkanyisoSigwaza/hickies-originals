@@ -2,12 +2,14 @@
 	background-color: red;           /* colours the different buttons*/
 	border-radius:100%;
 	padding: 12px 28px;
+	height:50px;
 }
 
 #buttonGreen{
 	background-color: green;
 	border-radius:100%;
 	padding: 12px 28px;
+	height:50px;
 	
 }
 
@@ -15,6 +17,7 @@
 	background-color: orange;
 	border-radius:100%;
 	padding: 12px 28px;
+	height:50px;
 	
 }
 
@@ -22,6 +25,7 @@
 	background-color: blue;
 	border-radius:100%;
 	padding: 12px 28px;
+	height:50px;
 	
 }
 
@@ -29,9 +33,50 @@
 	background-color: yellow;
 	border-radius:100%;
 	padding: 12px 28px;
+	height:50px;
 	
 }
+#buttonPurple{
+	background-color: purple;
+	border-radius:100%;
+	padding: 12px 28px;
+	height:50px;
+}
 
+#buttonNavy{
+	background-color: navy;
+	border-radius:100%;
+	padding: 12px 28px;
+	height:50px;
+}
+
+#buttonBlack{
+	background-color: black;
+	border-radius:100%;
+	padding: 12px 28px;
+	height:50px;
+}
+
+#buttonPurple{
+	background-color: purple;
+	border-radius:100%;
+	padding: 12px 28px;
+	height:50px;
+}
+
+#buttonSilver{
+	background-color: silver;
+	border-radius:100%;
+	padding: 12px 28px;
+	height:50px;
+}
+
+#buttonPink{
+	background-color: pink;
+	border-radius:100%;
+	padding: 12px 28px;
+	height:50px;
+}
 #count{                                    
 	border-radius:30%;
 	padding: 12px 28px;
@@ -44,6 +89,7 @@
 	padding: 12px 90px;
 	color:white;
 	background-color: black;
+
 }
  #color{
     text-align:left;
@@ -85,16 +131,77 @@
 	padding: 10px;
 	border-radius: 20%;
 }
-#stars img{
-	width:100%;
-	align-content:left:;
-}
+
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}*
 .modal-content{
 	border: dashed;
 
 }
+#star{
+	list-style: none;
+    width: 100%;
+    height: 90px;
+    margin-top:30px;
+    margin-bottom: -50px;
+    padding: 0px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
-#amount p{
+}
+#star li{
+	display: inline-block;
+	
+	height:100%;
+	padding-left: 45px;
+	
+}
+#star li img{
+	width:160px;
+}
+#mali{
+	list-style: none;
+    width: 100%;
+    height: 90px;
+    /*margin: 0;
+    padding: 0;*/
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#mali li{
+  display: inline-block;
+	
+	height:100%;
+	margin-left: 0px;
+	padding-left: 2px;
+	padding-right: 30px;
+	/*width:200px;*/
+}
+
+#money{
+	list-style: none;
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#money li{
+	display: inline-block;
+	width:50%;
+	height:100%;
+}
+#mali #amount {
 
 	font-weight: bold;
 	font-size: x-large;
@@ -106,4 +213,37 @@
 
 #chosenC{
 	padding-right: 30px;
+}
+.container .row{
+	padding:0;
+}
+.container .row .col-xs-4{   /*for displaying amounts on same row*/
+	padding-left:75px;
+}
+
+.container #moola .col-xs-4 p{   /*for displaying amounts on same row*/
+	width:50%;
+}
+.container .row .col-xs-4 img{
+	width:100px;
+}
+
+.container #modalChoose{
+	list-style: none;
+    width: 100%;
+    /*height: 90px;*/
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: visible;
+    overflow-y: visible;
+    
+}
+
+.container #modalChoose .col-sm-2{
+	width:auto;
+
+}
+#mali li #bold{
+	font-weight: bold;
 }

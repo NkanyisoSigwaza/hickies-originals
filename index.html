@@ -19,48 +19,103 @@
 	    <div class="jummbotron jumbotron-fluid bg-info text-white text-center">   <!--used to make heading look more atrractive-->
 	    	<div class = "container">
 				<h1 class="display-1">HICKIES Originals</h1>
+				<br>
 			
 			</div>
 		</div>
-		<div class = "container">           <!--for stars and reviews-->
+        
+        <ul id ="star">
+			
+			<li>
+				<img src = "starstruck.png">
+			</li>
+			<li>
+				<p class="text-muted">1,293 reviews</p>
+			</li>
+       </ul>
+       <ul id ="mali">
+       		<li>
+       			<p class = "text-danger lead" id="amount">$14.99</p>
+       		</li>
+       		<li>
+       			<p class="text-muted">$17.99</p>
+       		</li>
+       		<li>
+       			<p class="text-muted" id="bold">25% OFF</p>
+       		</li>
+
+       </ul>
+		
+    <!--
+		<div class = "container">           for stars and reviews
 			<div class ="row">
-					<div class = "col-sm-2" id = "stars">
+					<div class = "col-xs-4">
 						<img src = "starstruck.png">
+						
 					</div>
-					<div class = "col-sm-2">
+					<div class = "col-xs-4">
 						<p class="text-muted">1,293 reviews</p>
 					</div>
 				</div>
+			
+			<div class="row">
+				<ul id ="star">
+					
+					<li>
+						<img src = "starstruck.png">
+					</li>
+					<li>
+						<p class="text-muted">1,293 reviews</p>
+					</li>
+      		 </ul>
 
-				<div class ="row">
-					<div class = "col-sm-2" id = "amount">
+
+			</div>
+
+				<div class ="row" id="moola">
+					<div class = "col-xs-4" id = "amount">
 						<p class = "text-danger lead">$14.99</p>
 					</div>
-					<div class = "col-sm-2">
+					<div class = "col-xs-4">
 						<p class="text-muted">$17.99</p>
 					</div>
 
-					<div class = "col-sm-2" id="percent">
+					<div class = "col-xs-4" id="percent">
 						<p class="text-muted">25% OFF</p>
 					</div>
 			
 				</div>
+
+			-->
 				<p>ONLINE EXCLUSIVE</p>
 		</div>
+
 		
 
 	    <p id="colorChosen"><strong>COLOR:</strong></p>
 
 
-		<button type = "button" id="buttonRed" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Red"' aria-pressed="true"></button>  <!-- changes to the colour clicked-->
+		<button  type = "button" id="buttonRed" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Red"' aria-pressed="true"></button>  <!-- changes to the colour clicked-->
 
 		<button type = "button" id="buttonGreen" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Green"'></button>
 
-		<button type = "button" id="buttonBlue" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Blue"'></button>
+		<button type = "button" class="bg-primary" id="buttonBlue" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Blue"'></button>
 
 		<button type = "button" id="buttonYellow" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Yellow"'></button>
 
 		<button type = "button" id="buttonOrange"onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Orange"'></button>
+
+
+		<button  type = "button" id="buttonPurple" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Purple"' aria-pressed="true"></button>  <!-- changes to the colour clicked-->
+
+		<button type = "button" id="buttonBlack" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Black"'></button>
+
+		<button type = "button" id="buttonNavy" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Navy"'></button>
+
+		<button type = "button" id="buttonSilver" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Silver"'></button>
+
+		<button type = "button" id="buttonPink"onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong>Pink"'></button>
+
         <br>
         <br>
 		
@@ -100,7 +155,7 @@
 				<p> &nbsp &nbsp &nbsp &nbsp &nbsp  Please add the quantity of the item you have selected</p>
 
 				<div class="container">
-					<div class ="row" >
+					<div class ="row" id= "modalChoose" >
 						<div class="col-sm-2">
 							<p id ="chosenC">Electric red</p>
 						</div>
