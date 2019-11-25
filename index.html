@@ -126,7 +126,7 @@
 
 		<button type = "button" id = "count">0</button>
 
-		<button type = "button" id = "cart" data-toggle="modal" data-target="#myModal">Add to cart</button>
+		<button type = "button" id = "cart" data-toggle="modal" data-target="#exampleModalCenter">Add to cart</button>
 		<br>
 		<br>
 		<br>
@@ -147,8 +147,9 @@
 
 		
 
-       <div class ="modal" id="myModal">
-	        <!--Modal content-->
+      <!-- <div class ="modal fade" id="myModal">
+       		<div class = "modal-dialog modal-dialog-centered" role="dialog" aria-labelledby="a"
+	        Modal content
 			<div class="modal-content modal-md"  >
 				<span class="close">&times;</span>
 
@@ -169,6 +170,45 @@
 							<img src = "splus.png" onclick=add()>
 						</div>
 					</div>
+				</div>  -->
+
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="myModalTitle">Modal title</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <p> &nbsp &nbsp &nbsp &nbsp &nbsp  Please add the quantity of the item you have selected</p>
+
+								<div class="container">
+									<div class ="row" id= "modalChoose" >
+										<div class="col-sm-2">
+											<p id ="chosenC">Electric red</p>
+										</div>
+										<div class="col-sm-4">
+											<img src = "sminus.png" style="width:50%" onclick=subtract()>
+										</div>
+										<div class="col-sm-2">
+											<h1 id = "color" value="0">0</h1>
+										</div>
+										<div class="col-sm-4" id="plus">
+											<img src = "splus.png" onclick=add()>
+										</div>
+									</div>
+								</div>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn" >Agree</button>
+				        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+				      </div>
+				    </div>
+				  </div>
 				</div>
 
 

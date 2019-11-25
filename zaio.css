@@ -109,12 +109,12 @@
 }
 
 
-.modal .modal-content #buttons li{                           /*displays buttons on same line*/
+/*.modal .modal-content #buttons li{                           displays buttons on same line
 	display: inline-block;
 	
 	
 	
-}
+}*/
 
 
 #buttons #Agree{
@@ -139,10 +139,10 @@ img {
   max-width: 100%;
   height: auto;
 }*
-.modal-content{
+/*.modal-content{
 	border: dashed;
 
-}
+}*/
 #star{
 	list-style: none;
     width: 100%;
