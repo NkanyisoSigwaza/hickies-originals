@@ -109,16 +109,20 @@
 }
 
 
-/*.modal .modal-content #buttons li{                           displays buttons on same line
+.modal .modal-content #buttons li{                          /* displays buttons on same line*/
 	display: inline-block;
 	
 	
 	
-}*/
-
+}
+#buttons li{
+	text-decoration: none;
+}
 
 #buttons #Agree{
 	background-color: lightgreen;
+
+
 	margin-left: 580px;
 
 	padding: 10px;
@@ -138,7 +142,7 @@
 img {
   max-width: 100%;
   height: auto;
-}*
+}
 /*.modal-content{
 	border: dashed;
 
@@ -247,3 +251,23 @@ img {
 #mali li #bold{
 	font-weight: bold;
 }
+
+/*.modal .modal-content #agreeDis{
+	list-style: none;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+    
+
+}
+.modal .modal-content #agreeDis li{
+	display: inline-block;
+
+}*/
+
+

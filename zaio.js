@@ -1,14 +1,20 @@
 function add() {
     var color = document.getElementById('color');
     var number = color.innerHTML;
-    number++;
+   
+      number++;
+    
+    
     color.innerHTML = number;
 }
 
 function subtract(){
 	var color = document.getElementById('color');
     var number = color.innerHTML;
-    number--;
+    
+     if (number>0){
+      number--;
+    }
     color.innerHTML = number;
 }
 

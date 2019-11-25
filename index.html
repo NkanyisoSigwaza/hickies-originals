@@ -126,7 +126,7 @@
 
 		<button type = "button" id = "count">0</button>
 
-		<button type = "button" id = "cart" data-toggle="modal" data-target="#exampleModalCenter">Add to cart</button>
+		<button type = "button" id = "cart" data-toggle="modal" data-target="#myModal">Add to cart</button>
 		<br>
 		<br>
 		<br>
@@ -142,14 +142,13 @@
 		<p>
 			<hr> </hr>
 		</p>
-		<a data-toggle="modal" data-target="#needHelp"><strong>Need help?</strong></p>  <!--opens help modal-->
+		<a data-toggle="modal" data-target="#needHelp"><strong>Need help?</strong></p></a>  <!--opens help modal-->
 		<p><strong>Shipping & Returns</strong></p>
 
 		
 
-      <!-- <div class ="modal fade" id="myModal">
-       		<div class = "modal-dialog modal-dialog-centered" role="dialog" aria-labelledby="a"
-	        Modal content
+       <div class ="modal" id="myModal">
+	        <!--Modal content-->
 			<div class="modal-content modal-md"  >
 				<span class="close">&times;</span>
 
@@ -170,11 +169,50 @@
 							<img src = "splus.png" onclick=add()>
 						</div>
 					</div>
-				</div>  -->
+				</div>
 
 
-				<!-- Modal -->
-				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			    <ul id="buttons">
+			    	<li>
+			    		<button type="button" id="Agree">Agree</button>
+			    	</li>
+			    	<li>
+			    		<button type="button" id="Cancel" data-dismiss="modal" >Cancel</button>
+			    	</li>
+
+
+			    </ul>
+
+
+			</div>
+
+		</div>
+
+	
+	
+
+			   <!-- <div class="container">
+					<div class ="row" >
+						<div class="col-sm-2">
+							<p id ="chosenC">Electric red</p>
+						</div>
+						<div class="col-sm-2">
+							<img src = "sminus.png" style="height:4%;width:9%;"onclick=subtract()>
+						</div>
+						<div class="col-sm-2">
+							<h1 id = "color"  value="0">0</h1>
+						</div>
+						<div class="col-sm-2" id="plus">
+							<img src = "splus.png" style="height:4%;width:9%;" onclick=add()>
+						</div>
+
+					</div>
+				</div> -->
+
+
+
+				
+				<!--<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 				  <div class="modal-dialog modal-dialog-centered" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -192,13 +230,13 @@
 											<p id ="chosenC">Electric red</p>
 										</div>
 										<div class="col-sm-4">
-											<img src = "sminus.png" style="width:50%" onclick=subtract()>
+											<img src = "sminus.png" style="width:20%" onclick=subtract()>
 										</div>
 										<div class="col-sm-2">
 											<h1 id = "color" value="0">0</h1>
 										</div>
 										<div class="col-sm-4" id="plus">
-											<img src = "splus.png" onclick=add()>
+											<img src = "splus.png" style="width:20%" onclick=add()>
 										</div>
 									</div>
 								</div>
@@ -212,21 +250,14 @@
 				</div>
 
 
-			    <ul id="buttons">
-			    	<li>
-			    		<button type="button" id="Agree">Agree</button>
-			    	</li>
-			    	<li>
-			    		<button type="button" id="Cancel">Cancel</button>
-			    	</li>
+			  
 
-
-			    </ul>
+			
 
 
 			</div>
 
-		</div>
+		</div>-->
 
 		<div class ="modal" id="needHelp">     <!--help modal-->
 	   			<div class="modal-content modal-md"  >
