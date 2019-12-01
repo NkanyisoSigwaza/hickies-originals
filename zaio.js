@@ -1,7 +1,7 @@
 
-
-
-function add() {
+window.dict ={}; //dictionary to keep track of color and number of times each color is selected
+window.colors=[new color("Red",14.99),new color("Blue",17.89),new color("Green",34),new color("Orange",56)];
+function add() {                    //increments number when plus clicked
     var color = document.getElementById('color');
     var count = document.getElementById('count');
     var number = color.innerHTML;
@@ -13,7 +13,7 @@ function add() {
     color.innerHTML = number;
 }
 
-function subtract(){
+function subtract(){  //decrements number when minus clicked
 	var color = document.getElementById('color');
    var count = document.getElementById('count');
   
@@ -67,21 +67,24 @@ window.onclick = function(event) {
 }
 
 function myFunction() {
-  window.dict ={};
-   var color = document.getElementById('color');      //changes add to cart to check out now if number greater than 0
+  
+   var color = document.getElementById('color');    
    var background = document.getElementById('chosenC');
   var number = color.innerHTML;
   var backC = background.innerHTML;
-  dict[backC]=number;
+
+  dict[backC]=number;    //adds color and number of times to dictionary
+  
+
   for(var i=0;i<number;i++){
     var btn = document.createElement("BUTTON");
-    btn.style.backgroundColor=background.innerHTML;
+    btn.style.backgroundColor=background.innerHTML;   //sets the background of the button equal to the background color
   
     btn.className = "btn"
-    //btn.innerHTML = "YEA
+
 
     
-   document.getElementById("buttonsCheck").appendChild(btn); 
+   document.getElementById("buttonsCheck").appendChild(btn);   //adds color near details
 
  }
 }
@@ -270,18 +273,60 @@ function getColor(){
  }
  function checkOut(){
    $("#modalCheckout").modal("show");
-   var num=0;
+    
+  
    for(var key in dict) {
-     num++;
+    
      var value = dict[key];
-      var par = document.createElement("P");
-      par.innerHTML=key+" "+value;
+     var par = document.createElement("P");
+      //par.innerHTML=key+" "+value;
       
+     
+   // document.getElementById("test").innerHTML="does this work";
+
+     if(key==red.name){
+       par.innerHTML=red.name+"   "+value+"    "+ red.price*value;
+     }
+     else if(key==yellow.name){
+       par.innerHTML=yellow.name+"   "+value+"   "+ yellow.price*value;
+     }
+     else if(key==black.name){
+    
+       par.innerHTML=black.name+"   "+value+"   "+ black.price*value;
+      
+
+     }
+
+    else if(key==navy.name){
+           par.innerHTML=navy.name+"   "+value+"    "+ navy.price*value;
+         }
+
+      else if(key==silver.name){
+             par.innerHTML=silver.name+"   "+value+"   "+ silver.price*value;
+           }
+
+      else if(key==blue.name){
+             par.innerHTML=blue.name+"   "+value+"   "+ blue.price*value;
+           }
+
+      else if(key==pink.name){
+             par.innerHTML=pink.name+"   "+value+"   "+ pink.price*value;
+           }
+
+      else if(key==green.name){
+             par.innerHTML=green.name+"   "+value+"   "+ green.price*value;
+           }
+
+      else if(key==orange.name){
+             par.innerHTML=orange.name+"   "+value+"   "+ orange.price*value;
+           }
+
+      else if(key==purple.name){
+             par.innerHTML=purple.name+"   "+value+"   "+ purple.price*value;
+           }
+     
+     
      document.getElementById("para").appendChild(par);
-     document.getElementById("test").innerHTML=num;
-     //document.getElementById("para").innerHTML =key+" "+value;
-
-
-    // do something with "key" and "value" variables
     }
- }
+
+}
