@@ -12,7 +12,13 @@
 	 
 	  <link rel="stylesheet" href = "zaio.css">
 	  
+
+ <script
+	  src="https://code.jquery.com/jquery-3.4.1.js"
+	  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	  crossorigin="anonymous"></script>
 	  <script src="zaio.js"></script>
+
 </head>
 
 <body>  
@@ -93,28 +99,29 @@
 		
 
 	    <p id="colorChosen"><strong>COLOR:</strong></p>
+        
+      
+		<button  type = "button" id="buttonRed" onclick=redClick()></button>  <!-- changes to the colour clicked-->
+
+		<button type = "button" id="buttonGreen" onclick=greenClick()></button>
+
+		<button type = "button" class="bg-primary" id="buttonBlue" onclick=blueClick()></button>
+
+		<button type = "button" id="buttonYellow" onclick=yellowClick()></button>
+
+		<button type = "button" id="buttonOrange"onclick=orangeClick()></button>
 
 
-		<button  type = "button" id="buttonRed" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Red"' aria-pressed="true"></button>  <!-- changes to the colour clicked-->
+		<button  type = "button" id="buttonPurple" onclick=purpleClick()></button>  <!-- changes to the colour clicked-->
 
-		<button type = "button" id="buttonGreen" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Green"'></button>
+		<button type = "button" id="buttonBlack" onclick=blackClick()></button>
 
-		<button type = "button" class="bg-primary" id="buttonBlue" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Blue"'></button>
+		<button type = "button" id="buttonNavy" onclick=navyClick()></button>
 
-		<button type = "button" id="buttonYellow" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Yellow"'></button>
+		<button type = "button" id="buttonSilver" onclick=silverClick()></button>
 
-		<button type = "button" id="buttonOrange"onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Orange"'></button>
+		<button type = "button" id="buttonPink"onclick=pinkClick()></button>
 
-
-		<button  type = "button" id="buttonPurple" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Purple"' aria-pressed="true"></button>  <!-- changes to the colour clicked-->
-
-		<button type = "button" id="buttonBlack" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Black"'></button>
-
-		<button type = "button" id="buttonNavy" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Navy"'></button>
-
-		<button type = "button" id="buttonSilver" onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong> Silver"'></button>
-
-		<button type = "button" id="buttonPink"onclick='document.getElementById("colorChosen").innerHTML = "<strong>COLOR:</strong>Pink"'></button>
 
         <br>
         <br>
@@ -126,7 +133,9 @@
 
 		<button type = "button" id = "count">0</button>
 
-		<button type = "button" id = "cart" data-toggle="modal" data-target="#myModal">Add to cart</button>
+		<button type = "button" id = "cart" onclick = getColor() >Add to cart</button>
+		<button type = "button" id = "checkOut" onclick=checkOut() >Check Out now!</button>
+		
 		<br>
 		<br>
 		<br>
@@ -135,7 +144,11 @@
 		</p>
 		<br>
 		<br>
-		<strong> DETAILS</strong>
+		<div id="div1">
+			<strong> DETAILS</strong>
+			<div id="buttonsCheck"></div>
+		</div>
+		
 		<br>
 		<br>
 		<br>
@@ -149,7 +162,7 @@
 
        <div class ="modal" id="myModal">
 	        <!--Modal content-->
-			<div class="modal-content modal-md"  >
+			<div class="modal-content modal-md" >
 				<span class="close">&times;</span>
 
 				<p> &nbsp &nbsp &nbsp &nbsp &nbsp  Please add the quantity of the item you have selected</p>
@@ -157,7 +170,7 @@
 				<div class="container">
 					<div class ="row" id= "modalChoose" >
 						<div class="col-sm-2">
-							<p id ="chosenC">Electric red</p>
+							<p id ="chosenC" >navy</p>
 						</div>
 						<div class="col-sm-4">
 							<img src = "sminus.png" onclick=subtract()>
@@ -174,7 +187,7 @@
 
 			    <ul id="buttons">
 			    	<li>
-			    		<button type="button" id="Agree">Agree</button>
+			    		<button type="button" id="Agree" onclick=myFunction() data-dismiss="modal">Agree</button>
 			    	</li>
 			    	<li>
 			    		<button type="button" id="Cancel" data-dismiss="modal" >Cancel</button>
@@ -188,7 +201,27 @@
 
 		</div>
 
-	
+	<div class ="modal" id="modalCheckout">
+	        <!--Modal content-->
+			<div class="modal-content modal-md" >
+				<span class="close">&times;</span>
+
+				<div class="modal-header">
+					<h3 class="modal-title">Checkout Summary</h3>
+				</div>
+				<div class="modal-body">
+
+					<p> You have purchased </p>
+					<div id ="para"></div>
+					<p id ="test"></p>
+
+				</div>
+				
+
+
+			</div>
+
+		</div>
 	
 
 			   <!-- <div class="container">
@@ -275,14 +308,17 @@
 			</div>
 
 		</div>
+
+		
 	
 
 
+ <script
+	  src="https://code.jquery.com/jquery-3.4.1.js"
+	  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	  crossorigin="anonymous"></script>
+		 
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
